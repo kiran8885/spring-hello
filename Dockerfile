@@ -1,8 +1,4 @@
-FROM ubuntu
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update
-RUN apt-get install apache2 -y
-RUN apt-get install apache2-utils -y
-RUN apt-get clean
+FROM openjdk:8
 EXPOSE 8080
-CMD ["apache2ctl","-D","FOREGROUND"]
+ADD target/spring-hello.jar spring-hello.jar
+ENTRYPOINT ["java","-jar","/spring-hello.jar"]
