@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:091782463681:cluster/spring-hello",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:091782463681:task-definition/spring-hello:5",
     "containerDefinitions": [
         {
             "name": "spring-hello",
-            "image": "091782463681.dkr.ecr.us-east-1.amazonaws.com/spring-hello",
+            "image": "091782463681.dkr.ecr.us-east-1.amazonaws.com/spring-hello:888c89955bb725dc67133033fd283493552c10fb",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,10 +16,8 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -36,7 +34,7 @@
     "taskRoleArn": "arn:aws:iam::091782463681:role/ecstask",
     "executionRoleArn": "arn:aws:iam::091782463681:role/ecstask",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 5,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -82,7 +80,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-10-12T06:40:25.297Z",
+    "registeredAt": "2023-10-12T17:16:22.407Z",
     "registeredBy": "arn:aws:iam::091782463681:root",
     "tags": []
 }
