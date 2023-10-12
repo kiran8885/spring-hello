@@ -1,4 +1,5 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD target/spring-hello.jar spring-hello.jar
+WORKDIR /app
+ADD target/spring-hello.jar /app
 ENTRYPOINT ["java","-jar","/spring-hello.jar"]
