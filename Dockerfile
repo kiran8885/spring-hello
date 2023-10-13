@@ -1,4 +1,5 @@
-FROM openjdk:8
-EXPOSE 8080
-ADD target/spring-hello.jar spring-hello.jar
-ENTRYPOINT ["java","-jar","/spring-hello.jar"]
+FROM openjdk:8-jdk-alpine
+EXPOSE 8089
+ARG JAR_FILE=target/spring-hello.jar
+ADD ${JAR_FILE} spring-hello.jar
+ENTRYPOINT exec java -jar spring-hello.jar
