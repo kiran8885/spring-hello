@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "taskDefinitionArn": "arn:aws:ecs:us-east-1:091782463681:task-definition/prod-spring-hello:1",
     "containerDefinitions": [
         {
@@ -9,64 +8,30 @@
             "portMappings": [
                 {
                     "name": "prod-spring-hello-80-tcp",
-=======
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:091782463681:task-definition/spring-hello:10",
-    "containerDefinitions": [
-        {
-            "name": "spring-hello",
-            "image": "091782463681.dkr.ecr.us-east-1.amazonaws.com/spring-hello:dfec9cd751e18fd5bbd77285d7f6a5b177b46338",
-            "cpu": 0,
-            "portMappings": [
-                {
-                    "name": "spring-hello-80-tcp",
->>>>>>> 52900cb806489e7e1801647259fef4963079ffe8
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 },
                 {
-<<<<<<< HEAD
                     "name": "prod-spring-hello-8080-tcp",
-=======
-                    "name": "spring-hello-8080-tcp",
->>>>>>> 52900cb806489e7e1801647259fef4963079ffe8
                     "containerPort": 8080,
                     "hostPort": 8080,
                     "protocol": "tcp",
                     "appProtocol": "http"
-<<<<<<< HEAD
-=======
-                },
-                {
-                    "name": "spring-hello-8081-tcp",
-                    "containerPort": 8081,
-                    "hostPort": 8081,
-                    "protocol": "tcp",
-                    "appProtocol": "http"
->>>>>>> 52900cb806489e7e1801647259fef4963079ffe8
                 }
             ],
             "essential": true,
             "environment": [],
-<<<<<<< HEAD
             "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
             "ulimits": [],
-=======
-            "mountPoints": [],
-            "volumesFrom": [],
->>>>>>> 52900cb806489e7e1801647259fef4963079ffe8
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-<<<<<<< HEAD
                     "awslogs-group": "/ecs/prod-spring-hello",
-=======
-                    "awslogs-group": "/ecs/spring-hello",
->>>>>>> 52900cb806489e7e1801647259fef4963079ffe8
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 },
@@ -74,19 +39,11 @@
             }
         }
     ],
-<<<<<<< HEAD
     "family": "prod-spring-hello",
     "taskRoleArn": "arn:aws:iam::091782463681:role/ecstask",
     "executionRoleArn": "arn:aws:iam::091782463681:role/ecstask",
     "networkMode": "awsvpc",
     "revision": 1,
-=======
-    "family": "spring-hello",
-    "taskRoleArn": "arn:aws:iam::091782463681:role/ecstask",
-    "executionRoleArn": "arn:aws:iam::091782463681:role/ecstask",
-    "networkMode": "awsvpc",
-    "revision": 10,
->>>>>>> 52900cb806489e7e1801647259fef4963079ffe8
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -132,11 +89,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-<<<<<<< HEAD
     "registeredAt": "2023-10-26T17:21:39.519Z",
-=======
-    "registeredAt": "2023-10-13T06:19:30.989Z",
->>>>>>> 52900cb806489e7e1801647259fef4963079ffe8
     "registeredBy": "arn:aws:iam::091782463681:root",
     "tags": []
 }
